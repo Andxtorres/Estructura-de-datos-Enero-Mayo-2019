@@ -1,0 +1,8 @@
+
+public class Equilateral extends Triangle{
+	
+	public Equilateral(String color, double side) {
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class Isosceles extends Triangle {
+
+	public Isosceles(String color, double longSide, double shortSide) {
+		super(color, longSide,longSide,shortSide);
+
+	}
+	
+	
+
+}
