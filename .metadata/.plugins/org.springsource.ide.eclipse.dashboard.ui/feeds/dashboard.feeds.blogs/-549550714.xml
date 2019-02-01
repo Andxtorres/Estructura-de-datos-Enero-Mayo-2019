@@ -5,7 +5,33 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-01-29T08:05:58Z</updated>
+  <updated>2019-02-01T02:24:41Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Oleg Zhurakousky</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/02/01/a-bootiful-podcast-oleg-zhurakousky" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-02-01:3553</id>
+    <updated>2019-02-01T02:24:41Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! In this installment we talk to Oleg Zhurakousky, lead of the Spring Cloud Stream project, an application integration and messaging wonk, and a prolific contributor to Spring Integration. Oleg also has the dubious honor of being one of my oldest friends on the Spring team - poor guy!&lt;/p&gt;
+&lt;p&gt;Twitter: &lt;a href="http://twitter.com/z_oleg"&gt;@z_oleg&lt;/a&gt;&lt;br/&gt;Twitter: &lt;a href="http://twitter.com/SpringCloud"&gt;@SpringCloud&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/568258017&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tips: The Reactor Context</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/01/30/spring-tips-the-reactor-context" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-01-16:3541</id>
+    <updated>2019-01-30T00:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! In this installment of Spring Tips we answer the question, &amp;ldquo;how do I propagate state across asynchronous, reactive execution pipelines?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;speaker: &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5tlZddM5Jo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - January 29th, 2019</title>
     <link rel="alternate" href="https://spring.io/blog/2019/01/29/this-week-in-spring-january-29th-2019" />
@@ -1433,155 +1459,5 @@ class ObjectStorageServiceDemo {&#xD;
 &lt;p&gt;As a follow up to 2.1.0.M2, this release primarily encompasses minor enhancements and bug fixes.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-do-you-think" class="anchor" name="what-do-you-think"&gt;&lt;/a&gt;What Do You Think?&lt;/h2&gt;
 &lt;p&gt;We look forward to your feedback on these new features in &lt;a href="https://github.com/spring-cloud/spring-cloud-task/issues"&gt;Github&lt;/a&gt;, &lt;a href="http://stackoverflow.com/tags/spring-cloud-task"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://gitter.im/spring-cloud/spring-cloud-task"&gt;Gitter&lt;/a&gt;, or directly via Twitter to &lt;a href="https://twitter.com/michaelminella"&gt;@michaelminella&lt;/a&gt; or &lt;a href="https://twitter.com/cppwfs"&gt;@cppwfs&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-task/"&gt;Spring Cloud Task Home&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-task"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-cloud-task/docs/2.1.0.RC1/reference/htmlsingle/"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Bootiful Azure: Integration with Azure Service Bus (4/6)</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/01/14/bootiful-azure-integration-with-azure-service-bus-4-6" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-01-02:3518</id>
-    <updated>2019-01-14T00:00:00Z</updated>
-    <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;This is part 4 of a 6 part series, with new posts Mondays and Thursdays, introducing Microsoft Azure for Spring developers. I couldn&amp;rsquo;t have put this together without input from Microsoft&amp;rsquo;s Asir Vedamuthu Selvasingh, Yitao Dong, Bruno Borges, Brian Benz and Theresa Nguyen. You can find the code for this series &lt;a href="https://github.com/joshlong/bootiful-azure-article"&gt;on Github&lt;/a&gt;. Hit me up on &lt;a href="http://twitter.com/Starbuxman"&gt;Twitter (@starbuxman)&lt;/a&gt; as you&amp;rsquo;re reading the installments with any feedback or questions. You can also learn more about Microsoft Azure in my &lt;a href="http://twitter.com/SpringTipsLive"&gt;Spring Tips (@SpringTipsLive)&lt;/a&gt; installment, &lt;a href="https://spring.io/blog/2018/12/05/spring-tips-bootiful-microsoft-azure"&gt;&lt;em&gt;Bootiful Azure&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Here are all the installments: &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/01/03/bootiful-azure-taking-your-first-steps-with-microsoft-azure-1-6"&gt;Bootiful Azure: Taking Your First Steps with Microsoft Azure&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/01/07/bootiful-azure-sql-based-data-access-with-microsoft-sql-server-2-6"&gt;Bootiful Azure: SQL-based data access with Microsoft SQL Server&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/01/10/bootiful-azure-global-scale-data-access-with-cosmosdb-3-6"&gt;Bootiful Azure: Global Scale Data Access with CosmosDB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/01/14/bootiful-azure-integration-with-azure-service-bus-4-6"&gt;Bootiful Azure: Integration with Azure Service Bus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/01/17/bootiful-azure-object-storage-service-5-6"&gt;Bootiful Azure: Object Storage Service&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/01/21/bootiful-azure-to-production-6-6"&gt;Bootiful Azure: To Production!&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Azure Service Bus is a cloud messaging as a service and integration technology. It is, just like CosmosDB, as flexible as possible. It &lt;a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp"&gt;supports the AMQP 1.0 protocol&lt;/a&gt;, like RabbitMQ. AMQP is a flexible wire protocol. The protocol itself includes instructions for administering the broker, beyond just interacting with it. AMQP brokers are ideal for integration because they are language- and platform-agnostic. In an AMQP broker producers send messages to &lt;em&gt;exchanges&lt;/em&gt; which then route the messages to &lt;em&gt;queues&lt;/em&gt;, from which consumers then read the messages. The exchange is responsible for deciding to which queue the message should be sent. It does this in any of a number of ways but it usually involves looking at a key in the message headers called the &lt;em&gt;routing key&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;This indirection between the exhcange and the queues makes AMQP a bit more flexible than JMS-based brokers where producers send messages directly to &lt;code&gt;Destination&lt;/code&gt; objects that consumers then read from. This means that producers and consumers are coupled by their choice of &lt;code&gt;Destination&lt;/code&gt;. Additionally, JMS is an API for the JVM, it is not a wire protocol. As such, producers and consumers are dependent on the version of the library they&amp;rsquo;re using being correct. That said, &lt;a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-java-how-to-use-jms-api-amqp"&gt;you can also use Azure Service Bus through the JMS API&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Like I said, Azure Service Bus is nothing if not flexible!&lt;/p&gt;
-&lt;p&gt;The AMQP model is illustrative because, basically, the native model for Azure Service Bus looks like AMQP. In Azure Service Bus you have topics or queues to which you send messages. Messages are then connected to subscriptions, from which consumers read. Let&amp;rsquo;s build a simple example that sends and then consumes messages. We won&amp;rsquo;t use AMQP or JMS, just the regular Microsoft Azure ServiceBus API.&lt;/p&gt;&lt;h2&gt;&lt;a href="#configuring-azure-service-bus-on-microsoft-azure" class="anchor" name="configuring-azure-service-bus-on-microsoft-azure"&gt;&lt;/a&gt;Configuring Azure Service Bus on Microsoft Azure&lt;/h2&gt;
-&lt;p&gt;You&amp;rsquo;ll need to provision a servicebus namespace, a topic (top which we send messages and from which multiple consumers may listen) and a subscription (a consumer to either a topic or a queue) to connect to the topic. Here&amp;rsquo;s an example script that does just that.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint shell"&gt;#!/usr/bin/env bash&#xD;
-&#xD;
-destination=messages&#xD;
-topic=${destination}-topic&#xD;
-subscription=${destination}-subscription&#xD;
-namespace=bootiful&#xD;
-rg=$1&#xD;
-&#xD;
-az servicebus namespace create --resource-group $rg \&#xD;
-    --name ${namespace}&#xD;
-&#xD;
-az servicebus topic create --resource-group $rg \&#xD;
-    --namespace-name ${namespace} \&#xD;
-    --name ${topic}&#xD;
-&#xD;
-az servicebus topic subscription create --resource-group $rg  \&#xD;
-    --namespace-name ${namespace} --topic-name ${topic} \&#xD;
-    --name ${subscription}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You&amp;rsquo;ll need a connection string in order to connect your Spring application to the servicebus. Run this command and note the &lt;code&gt;primaryConnectionString&lt;/code&gt; attribute value for later.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint shell"&gt;az servicebus namespace authorization-rule keys list --resource-group bootiful --namespace-name bootiful --name RootManageSharedAccessKey
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#introducing-azure-service-bus-into-your-spring-application" class="anchor" name="introducing-azure-service-bus-into-your-spring-application"&gt;&lt;/a&gt;Introducing Azure Service Bus into your Spring Application&lt;/h2&gt;
-&lt;p&gt;Add the following dependency to your build: &lt;code&gt;com.microsoft.azure&lt;/code&gt; : &lt;code&gt;azure-servicebus-spring-boot-starter&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ll write two components: one a producer and the other a consumer. In a &lt;em&gt;real&lt;/em&gt; application these things would naturally live in separate applications and separate processes. Messaging serves to support the integration of disparate applications, after all. We&amp;rsquo;ll look at the consumer first. The consumer needs to register a subscriber &lt;em&gt;before&lt;/em&gt; something else has produced the message, so we&amp;rsquo;ll make these beans &lt;em&gt;ordered&lt;/em&gt; - the Spring container will order their initialization one before the other based on the &lt;code&gt;Ordered&lt;/code&gt; value we give it.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;package com.example.bootifulazure;&#xD;
-&#xD;
-import com.microsoft.azure.servicebus.ExceptionPhase;&#xD;
-import com.microsoft.azure.servicebus.IMessage;&#xD;
-import com.microsoft.azure.servicebus.IMessageHandler;&#xD;
-import com.microsoft.azure.servicebus.ISubscriptionClient;&#xD;
-import lombok.extern.log4j.Log4j2;&#xD;
-import org.springframework.boot.context.event.ApplicationReadyEvent;&#xD;
-import org.springframework.context.event.EventListener;&#xD;
-import org.springframework.core.Ordered;&#xD;
-import org.springframework.stereotype.Component;&#xD;
-&#xD;
-import java.util.concurrent.CompletableFuture;&#xD;
-&#xD;
-@Log4j2&#xD;
-@Component&#xD;
-class ServiceBusConsumer implements Ordered {&#xD;
-&#xD;
-    private final ISubscriptionClient iSubscriptionClient;&#xD;
-&#xD;
-    ServiceBusConsumer(ISubscriptionClient isc) {&#xD;
-        this.iSubscriptionClient = isc;&#xD;
-    }&#xD;
-&#xD;
-    @EventListener(ApplicationReadyEvent.class)&#xD;
-    public void consume() throws Exception {&#xD;
-&#xD;
-        this.iSubscriptionClient.registerMessageHandler(new IMessageHandler() {&#xD;
-&#xD;
-            @Override&#xD;
-            public CompletableFuture&amp;lt;Void&amp;gt; onMessageAsync(IMessage message) {&#xD;
-                log.info(&amp;quot;received message &amp;quot; + new String(message.getBody()) + &amp;quot; with body ID &amp;quot; + message.getMessageId());&#xD;
-                return CompletableFuture.completedFuture(null);&#xD;
-            }&#xD;
-&#xD;
-            @Override&#xD;
-            public void notifyException(Throwable exception, ExceptionPhase phase) {&#xD;
-                log.error(&amp;quot;eeks!&amp;quot;, exception);&#xD;
-            }&#xD;
-        });&#xD;
-&#xD;
-    }&#xD;
-&#xD;
-    @Override&#xD;
-    public int getOrder() {&#xD;
-        return Ordered.HIGHEST_PRECEDENCE;&#xD;
-    }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;When a message arrives, we log its &lt;code&gt;body&lt;/code&gt; and &lt;code&gt;messageId&lt;/code&gt; .&lt;/p&gt;
-&lt;p&gt;Now, let&amp;rsquo;s look at the producer.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;package com.example.bootifulazure;&#xD;
-&#xD;
-import com.microsoft.azure.servicebus.ITopicClient;&#xD;
-import com.microsoft.azure.servicebus.Message;&#xD;
-import lombok.extern.log4j.Log4j2;&#xD;
-import org.springframework.boot.context.event.ApplicationReadyEvent;&#xD;
-import org.springframework.context.event.EventListener;&#xD;
-import org.springframework.core.Ordered;&#xD;
-import org.springframework.stereotype.Component;&#xD;
-&#xD;
-import java.time.Instant;&#xD;
-&#xD;
-@Log4j2&#xD;
-@Component&#xD;
-class ServiceBusProducer implements Ordered {&#xD;
-&#xD;
-    private final ITopicClient iTopicClient;&#xD;
-&#xD;
-    ServiceBusProducer(ITopicClient iTopicClient) {&#xD;
-        this.iTopicClient = iTopicClient;&#xD;
-    }&#xD;
-&#xD;
-    @EventListener(ApplicationReadyEvent.class)&#xD;
-    public void produce() throws Exception {&#xD;
-        this.iTopicClient.send(new Message(&amp;quot;Hello @ &amp;quot; + Instant.now().toString()));&#xD;
-    }&#xD;
-&#xD;
-    @Override&#xD;
-    public int getOrder() {&#xD;
-        return Ordered.LOWEST_PRECEDENCE;&#xD;
-    }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Pretty straightforward right? The meat of the classes are in the &lt;code&gt;consume()&lt;/code&gt; and &lt;code&gt;produce()&lt;/code&gt; methods. The consumer runs first, then the producer. If you&amp;rsquo;ve ever done any work with messaging technoogies you might find the lack of a mention of any sort of &lt;em&gt;destination&lt;/em&gt; - the topic or queue - a bit puzzling. That configuration all lives in the properties (such as those in your &lt;code&gt;application.properties&lt;/code&gt; file) and are used when auto-configuring the &lt;code&gt;ITopicClient&lt;/code&gt; and &lt;code&gt;ISubscriptionClient&lt;/code&gt;. If you want to send messages or consume messages from multiple destinations, simply define the relevant beans yourself and make sure to &lt;em&gt;not&lt;/em&gt; specify &lt;code&gt;azure.service-bus.connection-string&lt;/code&gt; in your application&amp;rsquo;s properties, otherwise the default Spring Boot auto-configuration will kick in and try to create these beans for you.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.1.2 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/01/12/spring-boot-2-1-2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2019-01-12:3532</id>
-    <updated>2019-01-12T04:52:25Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot 2.1.2 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.1.2.RELEASE"&gt;over 60 fixes, improvements and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
