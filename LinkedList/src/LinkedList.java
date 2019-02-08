@@ -55,7 +55,7 @@ public class LinkedList<T> {
 		}
 	}
 	
-	public Node<T> getElementAtIndex(int index){
+	public Node<T> getNodeAtIndex(int index){
 		if(index<0||index>count()-1) {
 			System.out.println("Index out of bounds");
 			return null;
@@ -69,6 +69,33 @@ public class LinkedList<T> {
 			return temp;
 		}
 		
+	}
+	
+	public void insertElementAtIndex(int index,T element) {
+		if(index<0||index>count()) {
+			System.out.println("Index out of bounds");
+		}else {
+			if(count()==0) {
+				addElementAtStart(element);
+			}
+			int count=0;
+			Node<T> temp=start;
+			if(index!=0) {
+				while(count!=index-1) {
+					count++;
+					temp=temp.getNext();
+				}
+				Node<T> newNode= new Node<T>(element);
+				newNode.setNext(temp.getNext());
+				temp.setNext(newNode);
+			}else {
+				addElementAtStart(element);
+			}
+		}
+	}
+	
+	public T getElementAtIndex(int index) {
+		return getNodeAtIndex(index).getElement();
 	}
 	
 	public T getLastElement() {

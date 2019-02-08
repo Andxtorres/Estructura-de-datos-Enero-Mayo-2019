@@ -16,6 +16,8 @@ public class Main {
 		System.out.println("Element count: " +linkedList.count());
 		System.out.println("Final element: "+linkedList.getLastNode());
 		System.out.println("First element: "+linkedList.getFirstNode());
-		System.out.println("Element at: "+linkedList.getElementAtIndex(5));
+		System.out.println("Element at: "+linkedList.getElementAtIndex(2));
+		linkedList.insertElementAtIndex(0, new Alumno("A01211917","Juan"));
+		linkedList.print();
 	}
 }
