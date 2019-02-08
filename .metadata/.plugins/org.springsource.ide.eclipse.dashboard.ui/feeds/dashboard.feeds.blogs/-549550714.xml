@@ -5,7 +5,93 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-02-01T02:24:41Z</updated>
+  <updated>2019-02-05T16:52:23Z</updated>
+  <entry>
+    <title>This Week in Spring - February 5th, 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/02/05/this-week-in-spring-february-5th-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-02-05:3555</id>
+    <updated>2019-02-05T16:52:23Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! First of all, &lt;a href="https://www.bbc.com/news/world-asia-47121421"&gt;Happy Lunar New Year&lt;/a&gt;, if you celebrate! (More than a billion people around the world do celebrate&amp;hellip;) &lt;/p&gt;
+&lt;p&gt;Today I&amp;rsquo;m going to be giving a 4-hour presentation, &lt;a href="https://www.safaribooksonline.com/live-training/courses/reactive-spring-boot/0636920240426/"&gt;&lt;em&gt;Reactive Spring&lt;/em&gt;&lt;/a&gt;, for Safari members. &lt;/p&gt;
+&lt;p&gt;So, without further ado, let&amp;rsquo;s get to it!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/02/04/spring-session-for-apache-geode-pivotal-gemfire-2-0-8-release-available"&gt;Spring Session for Apache Geode/Pivotal GemFire 2.0.8.RELEASE available!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Last week in &lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I interviewed Spring messaging and integration maestro, and one of my oldest friends on the Spring team, &lt;a href="https://spring.io/blog/2019/02/01/a-bootiful-podcast-oleg-zhurakousky"&gt;Oleg Zhurakousky&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Hi Spring fans! In last week&amp;rsquo;s installment of &lt;em&gt;Spring Tips&lt;/em&gt;, &lt;a href="https://spring.io/blog/2019/01/30/spring-tips-the-reactor-context"&gt;&lt;em&gt;The Reactor Context&lt;/em&gt;&lt;/a&gt;, I look at how you can perpetuate state across thread execution jumps.&lt;/li&gt;
+  &lt;li&gt;If you&amp;rsquo;re using older versions of Cloud Foundry then you might be using &lt;a href="https://www.cloudfoundry.org/vulnerable-jdk-8u182/"&gt;a vulnerable version of Java&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I really liked this response from Kenny Bastani on &lt;a href="https://twitter.com/springcentral/status/1092022447606362113"&gt;eventual consistency&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is an interesting post on using &lt;a href="https://banzaicloud.com/blog/vault-java-spotguide/"&gt;Spring Boot with Vault on Kubernetes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love this - a look at using &lt;a href="https://twitter.com/springcentral/status/1091362057629417474"&gt;Neo4j and Spring Data Neo4j&lt;/a&gt; with the epic Mark Heckler and Jennifer Reif, among others&lt;/li&gt;
+  &lt;li&gt;I loved this look at Spring Data Redis and &lt;a href="https://twitter.com/springcentral/status/1090682564799549442"&gt;high-availability with Sentinel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out this replay of the &lt;a href="https://www.brighttalk.com/webcast/14893/345709"&gt;Securing Microservices with Spring and Pivotal Cloud Foundry&lt;/a&gt; webinar&lt;/li&gt;
+  &lt;li&gt;Hey check this out - it&amp;rsquo;s a third-party thing you can use to get lightweight administration of Spring Batch jobs, &lt;a href="https://github.com/tuxdevelop/spring-batch-lightmin"&gt;Spring Batch Lightmin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is interesting - it&amp;rsquo;s a program from &lt;code&gt;pacphi&lt;/code&gt; called &lt;code&gt;cf-butler&lt;/code&gt; that cleans stale apps and services on &lt;a href="https://github.com/pacphi/cf-butler"&gt;a Cloud Foundry foundation&lt;/a&gt;. It can be configured to report on and remove orphaned services and stopped app instances older than a configurable duration.&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Session for Apache Geode/Pivotal GemFire 2.0.8.RELEASE available!</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/02/04/spring-session-for-apache-geode-pivotal-gemfire-2-0-8-release-available" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>John Blum</name>
+    </author>
+    <id>tag:spring.io,2019-02-04:3554</id>
+    <updated>2019-02-04T19:59:16Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;I am pleased to announce &lt;em&gt;Spring Session for Apache Geode &amp;amp; Pivotal GemFire&lt;/em&gt; (SSDG) &lt;code&gt;2.0.8.RELEASE&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;SSDG &lt;a href="https://github.com/spring-projects/spring-session-data-geode/blob/2.0.8.RELEASE/gradle.properties#L11-L19"&gt;builds on&lt;/a&gt; &lt;em&gt;Spring Session&lt;/em&gt; &lt;code&gt;2.0.9.RELEASE&lt;/code&gt;, &lt;em&gt;Spring Data&lt;/em&gt; &lt;code&gt;Kay-SR13&lt;/code&gt; and  &lt;em&gt;Spring Framework&lt;/em&gt; &lt;code&gt;5.0.12.RELEASE&lt;/code&gt; along with Apache Geode &lt;code&gt;1.2.1&lt;/code&gt; and Pivotal GemFire &lt;code&gt;9.1.1&lt;/code&gt;.  Additionally, SSDG &lt;code&gt;2.0.8.RELEASE&lt;/code&gt; is compatible with &lt;em&gt;Spring Boot&lt;/em&gt; &lt;code&gt;2.0.x&lt;/code&gt; based applications.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This release pulls in many enhancements from the &lt;code&gt;2.1.x&lt;/code&gt; release branch along with a few minor fixes.  Highlights include:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="olist arabic"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;
+&lt;p&gt;Prevent saving non-dirty Sessions (&lt;a href="https://github.com/spring-projects/spring-session-data-geode/issues/12"&gt;Issue-12&lt;/a&gt;).  This primarily protects against Apache Geode/Pivotal GemFire bug &lt;a href="https://issues.apache.org/jira/browse/GEODE-6032"&gt;GEODE-6032&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Standardize all logging on SLF4J (&lt;a href="https://github.com/spring-projects/spring-session-data-geode/issues/18"&gt;Issue-18&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed bug involving incorrect synchronization lock on Session attributes passed down from the Session object on creation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed bug involving &lt;em&gt;Data Serialization&lt;/em&gt; to properly identify when a user uses a custom &lt;em&gt;DataSerializer&lt;/em&gt; to de/serialize the Session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="spring-session-for-apache-geode-pivotal-gemfire-code-2-0-x-code-end-of-life-eol-announcement"&gt;&lt;a class="anchor" href="#spring-session-for-apache-geode-pivotal-gemfire-code-2-0-x-code-end-of-life-eol-announcement"&gt;&lt;/a&gt;Spring Session for Apache Geode/Pivotal GemFire &lt;code&gt;2.0.x&lt;/code&gt; End-of-Life (EOL) Announcement&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Given the &lt;a href="https://spring.io/blog/2019/01/10/spring-data-lovelace-sr4-kay-sr13-and-ingalls-sr18-released#spring-data-1-x-and-2-0-x-end-of-life-eol"&gt;recent announcement&lt;/a&gt; for the EOL of &lt;em&gt;Spring
+Data&lt;/em&gt; &lt;code&gt;Kay&lt;/code&gt;, so too will SSDG &lt;code&gt;2.0.x&lt;/code&gt; reach it&amp;#8217;s EOL around the same timeframe (end of March/April).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I will tentatively plan for 1 additional release (i.e. SSDG &lt;code&gt;2.0.9.RELEASE&lt;/code&gt;) if either SD &lt;code&gt;Kay-SR14&lt;/code&gt; is or &lt;em&gt;Spring Session&lt;/em&gt; &lt;code&gt;2.0.10.RELEASE&lt;/code&gt; is released.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Afterwards, all users are encouraged to upgrade to SSDG &lt;code&gt;2.1&lt;/code&gt;, based on Apache Geode &lt;code&gt;1.6&lt;/code&gt; and Pivotal GemFire &lt;code&gt;9.5&lt;/code&gt; along with &lt;em&gt;Spring Session&lt;/em&gt; &lt;code&gt;2.1&lt;/code&gt;, &lt;em&gt;Spring Data&lt;/em&gt; &lt;code&gt;Lovelace&lt;/code&gt; and &lt;em&gt;Spring Framework&lt;/em&gt; &lt;code&gt;5.1&lt;/code&gt;.  SSDG &lt;code&gt;2.1&lt;/code&gt; is compatible with &lt;em&gt;Spring Boot&lt;/em&gt; &lt;code&gt;2.1&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="feedback-welcome"&gt;&lt;a class="anchor" href="#feedback-welcome"&gt;&lt;/a&gt;Feedback Welcome&lt;/h3&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;As always, any feedback on the new release via the usual channels is always greatly appreciated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session-data-geode/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-session-data-geode/pulls"&gt;PR&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session"&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Thank you!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Oleg Zhurakousky</title>
     <link rel="alternate" href="https://spring.io/blog/2019/02/01/a-bootiful-podcast-oleg-zhurakousky" />
@@ -1410,54 +1496,5 @@ class ObjectStorageServiceDemo {&#xD;
 &lt;p&gt;We began to reach out to GitHub support using every available channel available. Fortunately for us they noticed too. How could they not? By my estimate, the 2,600 issues that were imported before we pulled the breaks must have generated tens of millions of emails, not surprisingly causing notification disruptions.&lt;/p&gt;
 &lt;p&gt;A day later, after GitHub support had corrected the issues and turned off all notifications for the Spring Framework project to be on the safe side, we were onto a smoother path to importing all issues over the course of 8-9 hours. It took another few hours to make a second pass over all issues and comments, to replace Jira issue keys with GitHub reference numbers, and then several more days to check and clean up markup conversion issues.&lt;/p&gt;
 &lt;p&gt;All of that is now complete, and it is my pleasure to announce we are now open for business on &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;GitHub Issues&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session Bean-SR2, Apple-SR8, and 1.3.5 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/01/15/spring-session-bean-sr2-apple-sr8-and-1-3-5-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2019-01-15:3535</id>
-    <updated>2019-01-15T19:10:30Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;em&gt;This post was authored by &lt;a href="https://github.com/vpavic"&gt;Vedran Pavić&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community I’m pleased to announce the releases of Spring Session BOM &lt;code&gt;Bean-SR2&lt;/code&gt; (based on Spring Session &lt;code&gt;2.1.3.RELEASE&lt;/code&gt;), &lt;code&gt;Apple-SR8&lt;/code&gt; (based on &lt;code&gt;2.0.9.RELEASE&lt;/code&gt;), and &lt;code&gt;1.3.5.RELEASE&lt;/code&gt;. These maintenance releases bring a couple of bug fixes together with the usual dependency upgrades.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Complete details of these releases can be found in the following changelogs:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session/milestone/50?closed=1"&gt;&lt;code&gt;2.1.3.RELEASE&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session/milestone/51?closed=1"&gt;&lt;code&gt;2.0.9.RELEASE&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session/milestone/49?closed=1"&gt;&lt;code&gt;1.3.5.RELEASE&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-session/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-session/docs/2.1.3.RELEASE/reference/html5/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-session/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-session"&gt;Gitter&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Task 2.1.0.RC1 is now available</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/01/15/spring-cloud-task-2-1-0-rc1-is-now-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Glenn Renfro</name>
-    </author>
-    <id>tag:spring.io,2019-01-14:3533</id>
-    <updated>2019-01-15T14:30:26Z</updated>
-    <content type="html">&lt;p&gt;We are pleased to announce that Spring Cloud Task 2.1.0.RC1 is now available on Github and the Pivotal download repository. Many thanks to all of those who contributed to this release.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-rsquo-s-new" class="anchor" name="what-rsquo-s-new"&gt;&lt;/a&gt;What&amp;rsquo;s New?&lt;/h2&gt;
-&lt;p&gt;As a follow up to 2.1.0.M2, this release primarily encompasses minor enhancements and bug fixes.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-do-you-think" class="anchor" name="what-do-you-think"&gt;&lt;/a&gt;What Do You Think?&lt;/h2&gt;
-&lt;p&gt;We look forward to your feedback on these new features in &lt;a href="https://github.com/spring-cloud/spring-cloud-task/issues"&gt;Github&lt;/a&gt;, &lt;a href="http://stackoverflow.com/tags/spring-cloud-task"&gt;StackOverflow&lt;/a&gt;, &lt;a href="https://gitter.im/spring-cloud/spring-cloud-task"&gt;Gitter&lt;/a&gt;, or directly via Twitter to &lt;a href="https://twitter.com/michaelminella"&gt;@michaelminella&lt;/a&gt; or &lt;a href="https://twitter.com/cppwfs"&gt;@cppwfs&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-task/"&gt;Spring Cloud Task Home&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-task"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-cloud-task/docs/2.1.0.RC1/reference/htmlsingle/"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>
