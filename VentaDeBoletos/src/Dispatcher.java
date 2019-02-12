@@ -2,10 +2,10 @@
 public class Dispatcher implements Runnable{
 	private Ventana ventana;
 	private Thread t;
-	public Queue<Integer> queue;
+	public Stack<Boleto> stack;
 	
 	public Dispatcher(Ventana ventana) {
-		queue=new Queue<>();
+		stack=new Stack<>();
 		this.ventana=ventana;
 		
 	}
@@ -14,8 +14,8 @@ public class Dispatcher implements Runnable{
 	public void run() {
 		while(true) {
 			try {
-				Thread.sleep(2000);
-				ventana.soldLabel.setText(""+queue.dequeue());
+				Thread.sleep(10000);
+				ventana.soldLabel.setText(""+stack.pop().toString());
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

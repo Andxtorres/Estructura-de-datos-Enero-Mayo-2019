@@ -43,7 +43,8 @@ public class Ventana extends JFrame{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			dispatcher.queue.enqueue(Integer.parseInt(numberToAdd.getText()));
+			Boleto b= new Boleto(numberToAdd.getText());
+			dispatcher.stack.push(b);
 		}
 		
 	}
