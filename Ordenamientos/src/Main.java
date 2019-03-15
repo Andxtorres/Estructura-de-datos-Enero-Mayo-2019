@@ -14,7 +14,8 @@ public class Main {
 		linkedList.print();
 		System.out.println("---------------");
 		Ordenamiento<Integer> ordenamientos= new Ordenamiento<>();
-		ordenamientos.quickSort(linkedList);
+		//ordenamientos.quickSort(linkedList);
+		ordenamientos.mergeSortRec(linkedList.getFirstNode());
 		linkedList.print();
 		/*
 		linkedList.swap(1, 4);

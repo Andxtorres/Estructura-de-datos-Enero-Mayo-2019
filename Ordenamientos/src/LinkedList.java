@@ -6,6 +6,10 @@ public class LinkedList<T extends Comparable<T>> {
 	public LinkedList() {
 	}
 	
+	public LinkedList(Node<T> start) {
+		this.start=start;
+	}
+	
 	public LinkedList(LinkedList<T> list) {
 		Node<T> temp= list.getFirstNode();
 		start= new Node<>(list.getFirstNode().getElement());
@@ -166,7 +170,18 @@ public class LinkedList<T extends Comparable<T>> {
 			}
 		}
 	}
-	
+	public void print(Node<T> start) {
+		if(start==null) {
+			System.out.println("Empty list");
+		}else {
+			Node<T> temp= start;
+			while(temp!=null) {
+				System.out.println(temp.getElement().toString());
+				temp=temp.getNext();
+			}
+		}
+	}
+		
 	public void swap(int x,int y) {
 		T temp1= getNodeAtIndex(x).getElement();
 		T temp2= getNodeAtIndex(y).getElement();
@@ -174,4 +189,18 @@ public class LinkedList<T extends Comparable<T>> {
 		getNodeAtIndex(y).setElement(temp1);
 		
 	}
+
+	public int getLength(Node<T> a) {
+		int count = 0;
+		Node<T> h = a;
+		while (h != null) {
+			count++;
+			h = h.getNext();
+		}
+		return count;
+	}
+	
+	
+	
 }
+

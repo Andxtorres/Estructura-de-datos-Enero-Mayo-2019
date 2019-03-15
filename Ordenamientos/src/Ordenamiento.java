@@ -86,4 +86,82 @@ public class Ordenamiento<T extends Comparable<T>> {
     	   quickSortRec(list,i, derecha);
     	   
 	}
+	
+	public Node<T> mergeSortRec(Node<T> start) {
+		Node<T> inicioAnterior= start;
+		LinkedList<T> listaTemporal= new LinkedList<>(start);
+		int mid= listaTemporal.count()/2;
+		if(start.getNext()==null) {
+			return start;	
+		}
+		while(mid-1>0) {
+			inicioAnterior=inicioAnterior.getNext();
+			mid--;
+		}
+		Node<T> nuevoInicio=inicioAnterior.getNext();
+		inicioAnterior.setNext(null);
+		inicioAnterior=start;
+		System.out.println("Parte list inicial izquierda: "+inicioAnterior.getElement());
+		System.out.println("Parte list inicial derecha: "+nuevoInicio.getElement());
+		
+		Node<T> izquierda= mergeSortRec(inicioAnterior);
+		Node<T> derecha= mergeSortRec(nuevoInicio);
+		
+		return merge(izquierda,derecha);
+	}
+	
+	
+	private Node<T> merge(Node<T> node1,Node<T> node2){
+		Node<T> res= null;
+		if(node1==null) {
+			return node2;
+		}
+		if(node2==null) {
+			return node1;
+		}
+		if(node1.getElement().compareTo(node2.getElement())>0) {
+			res= node2; 
+			res.setNext(merge(node1,node2.getNext()));
+		}else {
+			res= node1; 
+			res.setNext(merge(node1.getNext(),node2));		
+		}
+		LinkedList<T> listaTemporal= new LinkedList<>(res);
+		listaTemporal.print(res);
+		System.out.println("------");
+		return res;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
