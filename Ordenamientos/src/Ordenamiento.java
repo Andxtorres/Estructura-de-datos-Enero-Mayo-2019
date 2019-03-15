@@ -56,14 +56,34 @@ public class Ordenamiento<T extends Comparable<T>> {
 		}
 	}
 	
+	public void quickSort(LinkedList<T> list) {
+		quickSortRec(list,0,list.count()-1);
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	private void quickSortRec(LinkedList<T> list, int izquierda,int derecha) {
 
+       T pivot = list.getElementAtIndex((izquierda+derecha)/2);
+       int i = izquierda;
+       int j = derecha;
+      
+       while (i <= j) {
+
+           while (list.getElementAtIndex(i).compareTo(pivot) <0) {
+               i++;
+           }
+           while (list.getElementAtIndex(j).compareTo(pivot) > 0) {
+               j--;
+           }
+           if (i <= j) {
+               list.swap(i, j);
+               i++;
+               j--;
+           }
+       }
+       if (izquierda < j)
+           quickSortRec(list,izquierda, j);
+       if (i < derecha)
+    	   quickSortRec(list,i, derecha);
+    	   
+	}
 }

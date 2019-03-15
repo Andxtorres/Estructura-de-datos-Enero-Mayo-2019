@@ -1,0 +1,21 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.boton1{
+	-fx-background-color:blue;
+	-fx-text-fill:white;
+}
+.textoCentro{
+	-fx-text-fill:white;
+}
+.boton1:hover{
+	-fx-background-color:black;
+}
+
+.boton1:pressed{
+	-fx-background-color:red;
+}
+
+.toggleButton:selected{
+	-fx-background-color:red;
+	-fx-text-fill:white;
+}

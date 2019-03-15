@@ -69,7 +69,7 @@ public class LinkedList<T extends Comparable<T>> {
 	
 	public Node<T> getNodeAtIndex(int index){
 		if(index<0||index>count()-1) {
-			System.out.println("Index out of bounds");
+			System.out.println("Index out of bounds: "+index);
 			return null;
 		}else {
 			int count=0;
