@@ -19,7 +19,7 @@ public class Main {
 		pokedex.insert(graveler.hashCode(), graveler);
 		pokedex.insert(dodrio.hashCode(), dodrio);
 		pokedex.print();
-		System.out.println(pokedex.getValue(95));
+		System.out.println(pokedex.getValue(85));
 		
 		
 		
