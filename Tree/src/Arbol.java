@@ -3,7 +3,9 @@ public class Arbol<T extends Comparable<T>> {
 	
 	private Nodo<T> raiz;
 	
-	
+	public Nodo<T> getRoot(){
+		return raiz;
+	}
 	public void insertarElemento(T elemento) {
 		Nodo<T> nodo= new Nodo<>(elemento);
 		if(raiz==null) {
@@ -38,5 +40,27 @@ public class Arbol<T extends Comparable<T>> {
 			recorreEnPreOrdenRec(nodo.getDerecha());
 		}
 	}
+	public void recorreEnInOrden() {
+		recorreEnInOrdenRec(raiz);
+	}
+	
+	private void recorreEnInOrdenRec(Nodo<T> nodo) {
+		if(nodo!=null) {
+			recorreEnInOrdenRec(nodo.getIzquierda());
+			System.out.print(nodo.getElemento().toString()+", ");
+			recorreEnInOrdenRec(nodo.getDerecha());
+		}
+	}
+	public void recorreEnPostOrden() {
+		recorreEnPostOrdenRec(raiz);
+	}
+	
+	private void recorreEnPostOrdenRec(Nodo<T> nodo) {
+		if(nodo!=null) {
+			recorreEnPostOrdenRec(nodo.getIzquierda());
+			recorreEnPostOrdenRec(nodo.getDerecha());
 
+			System.out.print(nodo.getElemento().toString()+", ");
+		}
+	}	
 }

@@ -4,6 +4,8 @@ public class Nodo<T> {
 	private T elemento;
 	private Nodo<T> izquierda;
 	private Nodo<T> derecha;
+	private int altura;
+	
 	
 	public Nodo(T elemento) {
 		this.elemento=elemento;
@@ -26,6 +28,14 @@ public class Nodo<T> {
 	public void setDerecha(Nodo<T> derecha) {
 		this.derecha = derecha;
 	}
+	public int getAltura() {
+		return altura;
+	}
+	public void setAltura(int altura) {
+		this.altura = altura;
+	}
+	
+	
 	
 	
 
